@@ -1,0 +1,27 @@
+extends: airbnb-base
+env:
+  browser: true
+  es6: true
+  commonjs: true
+  jquery: true
+globals:
+    Modernizr: true
+plugins:
+  - eslint-snake-case
+rules:
+  no-new: off
+  linebreak-style: 0
+  no-tabs: off
+  indent:
+    - error
+    - 2
+    - SwitchCase: 1
+  no-trailing-spaces: off
+  no-use-before-define: off
+  no-console:
+    - error
+  camelcase: off
+  quote-props: off
+  no-prototype-builtins: off
+  object-curly-spacing: off
+#  eslint-snake-case/rule-name: 2

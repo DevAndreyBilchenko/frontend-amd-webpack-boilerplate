@@ -1,0 +1,41 @@
+@import 'fonts';
+@import 'reset';
+
+html {
+  @include media('>desktop_1920') {
+    font-size: calc(18px + (100vw - 1920px) * 0.01);
+  }
+
+  @include media('>desktop_l', '<desktop_1920') {
+    font-size: calc(18px - (1920px - 100vw) * 0.008);
+  }
+
+  @include media('>desktop', '<=desktop_l') {
+    font-size: calc(18px + (100vw - 1025px) * 0.01);
+  }
+
+  @include media('>=tablet', '<desktop') {
+    font-size: calc(18px - (1024px - 100vw) * 0.008);
+  }
+
+  @include media('<phone_xl') {
+    font-size: calc(18px - (480px - 100vw) * 0.03);
+  }
+
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.333;
+  font-family: $font;
+  font-size: inherit;
+
+  &.is-menu-active {
+    overflow: hidden;
+  }
+}
+
+button {
+  font-family: $font;
+}

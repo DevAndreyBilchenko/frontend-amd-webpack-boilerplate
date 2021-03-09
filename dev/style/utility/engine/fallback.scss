@@ -1,0 +1,5 @@
+@mixin fallback($property, $value, $fallback-value) {
+  // sass-lint:disable no-duplicate-properties
+  #{$property}: $fallback-value;
+  #{$property}: $value;
+}

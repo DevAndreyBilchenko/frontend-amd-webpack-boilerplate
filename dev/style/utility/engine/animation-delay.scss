@@ -1,0 +1,19 @@
+@mixin animation-delay {
+  &.is-delay {
+    @include media('>desktop_l') {
+      animation-delay: 0.5s;
+    }
+  }
+
+  &.is-delay-1 {
+    @include media('>desktop_l') {
+      animation-delay: 1s;
+    }
+  }
+
+  &.is-delay-2 {
+    @include media('>desktop_l') {
+      animation-delay: 1.5s;
+    }
+  }
+}

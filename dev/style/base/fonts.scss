@@ -1,0 +1,4 @@
+$pfd: '../fonts/playfair-display/playfair-display-v20-latin_cyrillic-';
+
+// https://www.npmjs.com/package/postcss-font-weight-names
+@include font-face('Playfair Display', '#{$pfd}700', 700, normal);
